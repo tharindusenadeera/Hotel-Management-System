@@ -1,0 +1,51 @@
+﻿@model ChoiseManagement.Models.Hotel.EventReservation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EventReservation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Event_GuestDetails.GuestName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Event_GuestDetails.GuestName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hall.HallName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hall.HallName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventStartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventStartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventEndDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EventBookingID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

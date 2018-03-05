@@ -1,0 +1,59 @@
+﻿@model ChoiseManagement.Models.Hotel.Order
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Food_Items.Item_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Food_Items.Item_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reservation.Reservation_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reservation.Reservation_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Portion_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Portion_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Item_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Item_Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Order_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

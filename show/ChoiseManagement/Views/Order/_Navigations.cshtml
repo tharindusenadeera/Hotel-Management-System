@@ -1,0 +1,47 @@
+﻿@using ChoiseManagement.Models.Hotel
+
+@model List<ChoiseManagement.Models.Hotel.Food_Categories>
+
+@*<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-inverse">
+        @*<a href="#" class="navbar-brand">
+                <img src="~/Content/Images/Choice-Hotels-International.png" style="margin-top:-13px; margin-bottom:0px; margin-left:-30px; height:60px; width:100px; z-index:20;" />
+            </a>*@
+       @* @Html.ActionLink("All Categories", "Index", "Home", null, new { @class = "form-inline navbar " })
+        @foreach (Food_Categories cat in Model)
+        {
+        <li>
+            @Html.ActionLink(@cat.Category, "Index", "Order", new { categoryId = @cat.Food_category_Id }, new { @class = "form-inline navbar" })
+        </li>
+        }
+    </ul>
+</div>*@
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    @*@Html.ActionLink("All Categories", "Index", "Order",null, null)*@
+                </li>
+                
+                @foreach (Food_Categories cat in Model)
+                {
+                    <li>
+                        @Html.ActionLink(@cat.Category, "Index", "Order", new { reservationId= @ViewBag.rid, categoryId = @cat.Food_category_Id },null)
+                    </li>
+                }
+                <li>@ViewBag.rid</li>
+            </ul>
+           
+        </div>
+    </div>
+</div>

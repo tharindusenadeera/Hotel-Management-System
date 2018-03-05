@@ -1,0 +1,83 @@
+﻿@model ChoiseManagement.Models.Hotel.Hall
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hall</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HallName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HallName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HallCapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HallCapacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HallDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HallDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HImage1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HImage1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HImage2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HImage2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HImage3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HImage3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HImage4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HImage4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hall_price_Hour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hall_price_Hour)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HallId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Reservation>
+
+@{
+    ViewBag.Title = "searchGuest";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>searchGuest</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Reservation_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Guest_Details.Guest_First_Name)
+        </th>
+        <th>@Html.DisplayNameFor(model => model.Guest_Details.Guest_Email)</th>
+        <th>
+            @Html.DisplayNameFor(model => model.Package.Package_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room.Room_Catagorys.Room_Catogory)
+        </th>
+        <th>@Html.DisplayNameFor(model => model.Room.Room_Number)</th>
+        <th>
+            @Html.DisplayNameFor(model => model.Check_In)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Check_Out)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adults)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Childrens)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reservation_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guest_Details.Guest_First_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guest_Details.Guest_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Package.Package_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room.Room_Catagorys.Room_Catogory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room.Room_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Check_In)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Check_Out)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adults)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Childrens)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Reservation_Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Reservation_Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Reservation_Id })
+        </td>
+    </tr>
+    }
+
+</table>

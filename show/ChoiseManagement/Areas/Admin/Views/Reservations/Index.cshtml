@@ -1,0 +1,76 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Reservation>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Guest_Details.Guest_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Package.Package_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room.Room_Catagorys.Room_Catogory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room.Room_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Check_In)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Check_Out)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adults)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Childrens)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guest_Details.Guest_Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Package.Package_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room.Room_Catagorys.Room_Catogory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room.Room_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Check_In)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Check_Out)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adults)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Childrens)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Reservation_Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Reservation_Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Reservation_Id })
+        </td>
+    </tr>
+}
+
+</table>

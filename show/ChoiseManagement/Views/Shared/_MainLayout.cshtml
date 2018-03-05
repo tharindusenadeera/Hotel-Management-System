@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*<link href="~/Content/RoomItem.css" rel="stylesheet" />*@
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="color:#ffffff">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/Home/Index" class="navbar-brand">
+                    <img src="~/Content/Images/logo.jpg" style="margin-top:-13px; margin-bottom:0px; margin-left:-30px; height:60px; width:100px; z-index:20;" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse nav navbar-nav pull-right">
+                @*<ul class="nav navbar-nav pull-right">*@
+
+                @if (ViewBag.Name != null)
+                {
+                    <div class="form-inline" style="color:#ffffff">
+                        <div class="col-md-8 form-inline">
+                            <h4>Hi @ViewBag.Name</h4>
+                            @Html.ActionLink("My Account", "MyAcnt", "Home", new { @class = " form-controll pull-right" })
+                        </div>
+                        <div class="col-md-4">
+                            @Html.ActionLink("logout", "LogOut", "Home", new { @class = " form-controll btn btn-primary pull-right" })
+                        </div>
+
+                    </div>
+                }
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style="margin-top:50px;">
+        @RenderBody()
+        <hr />
+        <footer>
+
+            <div class="row container well-lg" style="height:150px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; @DateTime.Now.Year -  Hotel Beach Castle (TM) All-Rights Reserved</p>
+
+                    </div>
+                    <div class="col-md-6 form-inline">
+                        <h4><b>Email:</b></h4>
+                        <h5>beachcastle@hotel.com</h5>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6 form-inline">
+                        <h4><b>Contact Us:</b></h4>
+                        <h5>(+94) 91 xxxx xxx</h5>
+                    </div>
+                    <div class="col-md-6 form-inline">
+                        <h4><b>Avanue:</b></h4>
+                        <h5>Matara Road, Ganahena, Unawatuna, 80600 Unawatuna, Sri Lanka</h5>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr />
+            <div>
+                <img src="~/Content/Images/134515.png" style="width:1300px;height:65px; margin-bottom:0px;/>
+            </div>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

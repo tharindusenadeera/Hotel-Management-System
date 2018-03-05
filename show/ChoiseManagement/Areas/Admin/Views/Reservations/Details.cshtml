@@ -1,0 +1,77 @@
+﻿@model ChoiseManagement.Models.Hotel.Reservation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reservation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Guest_Details.Guest_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guest_Details.Guest_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Package.Package_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Package.Package_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Room.Room_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Room.Room_Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Check_In)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Check_In)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Check_Out)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Check_Out)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adults)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adults)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Childrens)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Childrens)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("View Bill Details", "MakeBill", "Manager", new { area = "Admin", id = Model.Reservation_Id }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("pdf Bill Details", "ReservationBill", "Manager", new { area = "Admin", rid = Model.Reservation_Id }, new { @class = "btn btn-primary" })
+    @*@Html.ActionLink("View Bill Details", "MakeBill", new { id = Model.Reservation_Id }) |
+   @Html.ActionLink("pdf Bill Details", "MakeBill", new { id = Model.Reservation_Id })*@
+</p>

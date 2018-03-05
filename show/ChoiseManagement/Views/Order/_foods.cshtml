@@ -1,0 +1,39 @@
+﻿@model ChoiseManagement.Models.Hotel.Food_Items
+
+<div class="row container well">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <img class="img-thumbnail text-center" src="~/Content/Images/@Model.Image_URL" style="height:150px; width:300px; margin-left:5px;" />
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <label class="text-center">@Model.Item_Name</label>
+        
+        
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <label class="text-center">Rs:@Model.Portion_Price</label>
+        
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <label class="text-center">@Model.Description</label>
+       
+    </div>
+    @*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <label class="hidden">@Model.Item_Code</label>
+        
+    </div>*@
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        @Html.ActionLink("Order", "AddFoods", "Order", new { ItemCode = Model.Item_Code }, new { @class = " form-controll btn btn-primary pull-right" }) 
+        @*@using (Html.BeginForm("AddFoods", "Order", new { ItemCode = Model.Item_Code }, FormMethod.Post))
+        {
+           // <input type="hidden" value="@Model.Item_Code" name="Item_Code" id="Item_Code" />
+            <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon glyphicon-cutlery"></span>Order</button>
+
+
+        }*@
+    </div>
+
+</div>

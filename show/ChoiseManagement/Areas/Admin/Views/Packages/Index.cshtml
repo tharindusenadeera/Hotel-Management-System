@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Package>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Package_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Package_Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Package_Details)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Package_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Package_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Package_Details)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Package_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Package_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Package_ID })
+        </td>
+    </tr>
+}
+
+</table>

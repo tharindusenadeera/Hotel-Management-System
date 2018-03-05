@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Food_Items>
+
+
+
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 container">
+            @Html.Partial("_foods", item)
+        </div>
+    }
+
+
+
+

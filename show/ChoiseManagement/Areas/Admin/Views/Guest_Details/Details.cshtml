@@ -1,0 +1,69 @@
+﻿@model ChoiseManagement.Models.Hotel.Guest_Details
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Guest_Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Guest_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guest_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guest_First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guest_First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guest_Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guest_Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guest_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guest_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guest_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guest_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guest_MobileNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guest_MobileNO)
+        </dd>
+
+       
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Guest_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

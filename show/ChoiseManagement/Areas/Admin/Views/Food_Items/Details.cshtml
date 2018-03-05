@@ -1,0 +1,67 @@
+﻿@model ChoiseManagement.Models.Hotel.Food_Items
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Food_Items</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Food_Categories.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Food_Categories.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Portion_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Portion_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image_URL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image_URL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

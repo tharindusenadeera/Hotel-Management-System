@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.RoomBooking>
+
+@{
+    ViewBag.Title = "My Account";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>My Account</h2>
+@Html.ActionLink("Check Availability", "Index", "Home", new { @class = " form-controll btn btn-primary" })
+@Html.ActionLink("Rooms", "Rooms", "Home", new { @class = " form-controll btn btn-primary" })
+<p>
+ 
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Reservation.Reservation_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoomNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartureDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reservation.Reservation_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RoomNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArivalDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartureDate)
+        </td>
+        <td>
+            @Html.ActionLink("Order", "Index", "Order", new { reservationId = item.ReservationId },null)
+            @Html.ActionLink("View Orders", "ViewOrder", "Home", new { reservationId = item.ReservationId },null) 
+            @Html.ActionLink("Delete", "Delete","Home", new { id=item.ReservationId },null)
+        </td>
+    </tr>
+}
+
+</table>

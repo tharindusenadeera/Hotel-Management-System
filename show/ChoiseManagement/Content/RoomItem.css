@@ -1,0 +1,20 @@
+﻿.itemContainer{
+    
+    border:1px #1b2a9d solid;
+   
+   
+    
+}
+.itemContainer:hover{
+    border:1px #1051ee solid
+}
+
+.naviborder{
+    margin-left:5px;
+    border:groove;
+    border:2px
+}
+.make{
+    margin-left:0px;
+    margin-right:0px;
+}

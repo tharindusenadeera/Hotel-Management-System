@@ -1,0 +1,19 @@
+﻿@model ChoiseManagement.Areas.Admin.Models.Email
+@{
+    ViewBag.Title = "Email";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@ViewBag.error
+<h2>Email</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(m => m.Sender, new { @class = "form-control" })
+
+    @*@Html.TextBoxFor(m => m.Subject, new { @class = "form-control" })
+    @Html.TextBoxFor(m => m.Body, new { @class = "form-control" })*@
+    <input type="submit" value="Send" />
+
+}
+   

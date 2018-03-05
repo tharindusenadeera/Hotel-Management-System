@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.RoomBooking>
+
+@{
+    ViewBag.Title = "Arival";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Arival</h2>
+
+<p>
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Reservation.Reservation_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoomNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartureDate)
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reservation.Reservation_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RoomNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArivalDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartureDate)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.BookingID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BookingID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BookingID })*@
+            @Html.ActionLink("Orders", "ViewOrder", "Manager", new { area = "Admin" , rid=item.ReservationId}, new { @class = " btn btn-primary" })
+
+        </td>
+        <td>
+            @Html.ActionLink("Generate PDF", "pdforder", "Manager", new{area = "Admin", rid = item.ReservationId }, new { @class = "btn btn-primary" })
+        </td>
+    </tr>
+}
+
+</table>

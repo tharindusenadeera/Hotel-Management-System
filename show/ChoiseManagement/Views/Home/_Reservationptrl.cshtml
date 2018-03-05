@@ -1,0 +1,81 @@
+﻿@model ChoiseManagement.Models.ViewModels.ReservationViewModel
+
+
+@using (Html.BeginForm("Reservation", "Home", FormMethod.Post, new { @class = "" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Reserve Room</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.reseravation.Package_Id, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.reseravation.Package_Id, new List<SelectListItem>
+                               {
+                                            new SelectListItem {Text="Full Board",Value="1"},
+                                   new SelectListItem {Text="Half Board",Value="2"},
+                                   new SelectListItem {Text="Breakfeast",Value="3"},
+                               }, new { @class = "form-control  col-md-2" })
+                @Html.ValidationMessageFor(model => model.reseravation.Package_Id, "", new { @class = "text-danger" })
+                
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.reseravation.Check_In, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.reseravation.Check_In, new { htmlAttributes = new { @class = "form-control" },@id = "checkIn" })
+                @Html.ValidationMessageFor(model => model.reseravation.Check_In, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.reseravation.Check_Out, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.reseravation.Check_Out, new { htmlAttributes = new { @class = "form-control" },@id="checkOut" })
+                @Html.ValidationMessageFor(model => model.reseravation.Check_Out, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.reseravation.Adults, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+               @Html.DropDownListFor(model => model.reseravation.Adults, new List<SelectListItem>
+                               {
+                                            new SelectListItem {Text="0",Value="",Selected=true},
+                                            new SelectListItem {Text="1",Value="1"},
+                                   new SelectListItem {Text="2",Value="2"},
+                                   new SelectListItem {Text="3",Value="3"},
+                               }, new { @class = "form-control col-md-2" })
+                @Html.ValidationMessageFor(model => model.reseravation.Adults, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.reseravation.Childrens, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.reseravation.Childrens, new List<SelectListItem>
+                               { new SelectListItem {Text="0",Value="0",Selected=true},
+                                            new SelectListItem {Text="1",Value="1"},
+                                   new SelectListItem {Text="2",Value="2"},
+                                   new SelectListItem {Text="3",Value="3"},
+                               }, new { @class = "form-control col-md-2" })
+                @Html.ValidationMessageFor(model => model.reseravation.Childrens, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

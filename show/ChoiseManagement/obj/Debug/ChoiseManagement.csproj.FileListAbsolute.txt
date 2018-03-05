@@ -1,0 +1,422 @@
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\ApplicationInsights.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\csc.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\vbc.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\ChoiseManagement.dll.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\ChoiseManagement.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\ChoiseManagement.pdb
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Antlr3.Runtime.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\EntityFramework.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\EntityFramework.SqlServer.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.Web.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Newtonsoft.Json.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.Helpers.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.Mvc.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.Optimization.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.Razor.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.WebPages.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\WebGrease.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.Web.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.Helpers.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.Mvc.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.Optimization.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.Razor.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.WebPages.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Antlr3.Runtime.pdb
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Newtonsoft.Json.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\EntityFramework.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\EntityFramework.SqlServer.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\obj\Debug\ChoiseManagement.csprojResolveAssemblyReference.cache
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\obj\Debug\ChoiseManagement.Migrations.Init.resources
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\obj\Debug\ChoiseManagement.csproj.GenerateResource.Cache
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\obj\Debug\ChoiseManagement.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\ChoiseManagement\ChoiseManagement\obj\Debug\ChoiseManagement.pdb
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\ApplicationInsights.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\csc.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\vbc.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\ChoiseManagement.dll.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\ChoiseManagement.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\ChoiseManagement.pdb
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Antlr3.Runtime.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\EntityFramework.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\EntityFramework.SqlServer.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.Web.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Newtonsoft.Json.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.Helpers.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.Mvc.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.Optimization.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.Razor.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.WebPages.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\WebGrease.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.Web.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.Helpers.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.Mvc.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.Optimization.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.Razor.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.WebPages.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Antlr3.Runtime.pdb
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Newtonsoft.Json.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\EntityFramework.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\EntityFramework.SqlServer.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\obj\Debug\ChoiseManagement.Migrations.Init.resources
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\obj\Debug\ChoiseManagement.csproj.GenerateResource.Cache
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\obj\Debug\ChoiseManagement.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\obj\Debug\ChoiseManagement.pdb
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\NewVersion\ChoiseManagement\obj\Debug\ChoiseManagement.csprojResolveAssemblyReference.cache
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\ApplicationInsights.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\csc.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\vbc.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\ChoiseManagement.dll.config
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\ChoiseManagement.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\ChoiseManagement.pdb
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Antlr3.Runtime.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\EntityFramework.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\EntityFramework.SqlServer.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.Web.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Newtonsoft.Json.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Owin.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Rotativa.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.Helpers.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.Mvc.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.Optimization.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.Razor.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.WebPages.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\WebGrease.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.Web.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.Helpers.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.Mvc.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.Optimization.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.Razor.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.WebPages.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Antlr3.Runtime.pdb
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Newtonsoft.Json.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\EntityFramework.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\EntityFramework.SqlServer.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\obj\Debug\ChoiseManagement.Migrations.Init.resources
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\obj\Debug\ChoiseManagement.csproj.GenerateResource.Cache
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\obj\Debug\ChoiseManagement.dll
+C:\Users\Mc-Malith\Documents\Visual Studio 2015\Projects\show\ChoiseManagement\obj\Debug\ChoiseManagement.pdb
+C:\show\ChoiseManagement\bin\ApplicationInsights.config
+C:\show\ChoiseManagement\bin\roslyn\csc.exe
+C:\show\ChoiseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\show\ChoiseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\show\ChoiseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\show\ChoiseManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\show\ChoiseManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\show\ChoiseManagement\bin\roslyn\vbc.exe
+C:\show\ChoiseManagement\bin\roslyn\VBCSCompiler.exe
+C:\show\ChoiseManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\show\ChoiseManagement\bin\ChoiseManagement.dll.config
+C:\show\ChoiseManagement\bin\ChoiseManagement.dll
+C:\show\ChoiseManagement\bin\ChoiseManagement.pdb
+C:\show\ChoiseManagement\bin\Antlr3.Runtime.dll
+C:\show\ChoiseManagement\bin\EntityFramework.dll
+C:\show\ChoiseManagement\bin\EntityFramework.SqlServer.dll
+C:\show\ChoiseManagement\bin\Microsoft.AI.Agent.Intercept.dll
+C:\show\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.dll
+C:\show\ChoiseManagement\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\show\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\show\ChoiseManagement\bin\Microsoft.AI.Web.dll
+C:\show\ChoiseManagement\bin\Microsoft.AI.WindowsServer.dll
+C:\show\ChoiseManagement\bin\Microsoft.ApplicationInsights.dll
+C:\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.dll
+C:\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\show\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.Google.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.dll
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.dll
+C:\show\ChoiseManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\show\ChoiseManagement\bin\Newtonsoft.Json.dll
+C:\show\ChoiseManagement\bin\Owin.dll
+C:\show\ChoiseManagement\bin\Rotativa.dll
+C:\show\ChoiseManagement\bin\System.Web.Helpers.dll
+C:\show\ChoiseManagement\bin\System.Web.Mvc.dll
+C:\show\ChoiseManagement\bin\System.Web.Optimization.dll
+C:\show\ChoiseManagement\bin\System.Web.Razor.dll
+C:\show\ChoiseManagement\bin\System.Web.WebPages.Deployment.dll
+C:\show\ChoiseManagement\bin\System.Web.WebPages.dll
+C:\show\ChoiseManagement\bin\System.Web.WebPages.Razor.dll
+C:\show\ChoiseManagement\bin\WebGrease.dll
+C:\show\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.xml
+C:\show\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\show\ChoiseManagement\bin\Microsoft.AI.Web.xml
+C:\show\ChoiseManagement\bin\Microsoft.AI.WindowsServer.xml
+C:\show\ChoiseManagement\bin\Microsoft.ApplicationInsights.xml
+C:\show\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\show\ChoiseManagement\bin\System.Web.Helpers.xml
+C:\show\ChoiseManagement\bin\System.Web.Mvc.xml
+C:\show\ChoiseManagement\bin\System.Web.Optimization.xml
+C:\show\ChoiseManagement\bin\System.Web.Razor.xml
+C:\show\ChoiseManagement\bin\System.Web.WebPages.xml
+C:\show\ChoiseManagement\bin\System.Web.WebPages.Deployment.xml
+C:\show\ChoiseManagement\bin\System.Web.WebPages.Razor.xml
+C:\show\ChoiseManagement\bin\Antlr3.Runtime.pdb
+C:\show\ChoiseManagement\bin\Newtonsoft.Json.xml
+C:\show\ChoiseManagement\bin\EntityFramework.xml
+C:\show\ChoiseManagement\bin\EntityFramework.SqlServer.xml
+C:\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.xml
+C:\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.Google.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.xml
+C:\show\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\show\ChoiseManagement\obj\Debug\ChoiseManagement.csprojResolveAssemblyReference.cache
+C:\show\ChoiseManagement\obj\Debug\ChoiseManagement.Migrations.Init.resources
+C:\show\ChoiseManagement\obj\Debug\ChoiseManagement.csproj.GenerateResource.Cache
+C:\show\ChoiseManagement\obj\Debug\ChoiseManagement.dll
+C:\show\ChoiseManagement\obj\Debug\ChoiseManagement.pdb
+C:\Users\acer\Desktop\show\ChoiseManagement\obj\Debug\ChoiseManagement.csprojResolveAssemblyReference.cache
+C:\Users\acer\Desktop\show\ChoiseManagement\obj\Debug\ChoiseManagement.Migrations.Init.resources
+C:\Users\acer\Desktop\show\ChoiseManagement\obj\Debug\ChoiseManagement.csproj.GenerateResource.Cache
+C:\Users\acer\Desktop\show\ChoiseManagement\obj\Debug\ChoiseManagement.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\obj\Debug\ChoiseManagement.pdb
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\ApplicationInsights.config
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\csc.exe
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\vbc.exe
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\ChoiseManagement.dll.config
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\ChoiseManagement.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\ChoiseManagement.pdb
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Antlr3.Runtime.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\EntityFramework.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\EntityFramework.SqlServer.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.Web.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.ApplicationInsights.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Newtonsoft.Json.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Owin.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Rotativa.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.Helpers.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.Mvc.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.Optimization.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.Razor.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.WebPages.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\WebGrease.dll
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.Web.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.ApplicationInsights.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.Helpers.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.Mvc.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.Optimization.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.Razor.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.WebPages.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Antlr3.Runtime.pdb
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Newtonsoft.Json.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\EntityFramework.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\EntityFramework.SqlServer.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\acer\Desktop\show\ChoiseManagement\bin\Microsoft.Owin.Security.MicrosoftAccount.xml

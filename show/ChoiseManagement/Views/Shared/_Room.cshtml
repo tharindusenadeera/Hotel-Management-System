@@ -1,0 +1,117 @@
+﻿@model ChoiseManagement.Models.Hotel.Room
+<script src="~/Scripts/ImageChange.js"></script>
+<link href="~/Content/RoomIndividual.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <img class="img-thumbnail bigimage" src="~/Content/Images/@Model.Room_Image_url_1" />
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+        <div class="row description"><h5>@Model.Room_Description</h5></div>
+        <div class="row">
+            <div class="col-lg-4">
+                @if (Model.Room_Catagorys.DvdPlayer == 1)
+                {
+                     <h5><img src="~/Content/Images/gtick.png" />DvdPlayer</h5>
+                }
+                else
+                {
+                    <h5>DvdPlayer</h5>
+                }
+            </div>
+            <div class="col-lg-4">
+                @if (Model.Room_Catagorys.LCD_Television == 1)
+                {
+                    <h5><img src="~/Content/Images/gtick.png" />LCD_Television</h5>
+                }
+                else
+                {
+                    <h5>LCD_Television</h5>
+                }
+            </div>
+            <div class="col-lg-4">
+                @if (Model.Room_Catagorys.MiniBar == 1)
+                {
+                    <h5><img src="~/Content/Images/gtick.png" />MiniBar</h5>
+                }
+                else
+                {
+                    <h5>MiniBar</h5>
+                }
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                @if (Model.Room_Catagorys.HairDrier == 1)
+                {
+                    <h5><img src="~/Content/Images/gtick.png" />HairDrier</h5>
+                }
+                else
+                {
+                    <h5>HairDrier</h5>
+                }
+            </div>
+            <div class="col-lg-4">
+                @if (Model.Room_Catagorys.RoomServices == 1)
+                {
+                    <h5><img src="~/Content/Images/gtick.png" />RoomServices</h5>
+                }
+                else
+                {
+                    <h5>RoomServices</h5>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+        <img class="img-thumbnail smallimages" src="~/Content/Images/@Model.Room_Image_url_2" />
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+        <img class="img-thumbnail smallimages" src="~/Content/Images/@Model.Room_Image_url_3" />
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+        <img class="img-thumbnail smallimages" src="~/Content/Images/@Model.Room_Image_url_4" />
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+        <img class="img-thumbnail smallimages" src="~/Content/Images/@Model.Room_Image_url_5" />
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        @Html.ActionLink("Book", "Reservation", "Home", new { roomNo = Model.Room_Number, }, new { @class = " form-controll btn btn-primary pull-right" })
+    </div>
+</div>
+@*<div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            <input type="button" class="btn btn-info" value="Reservation" />
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            <input type="button" class="btn btn-info" value="Register" />
+        </div>
+    </div>*@
+
+@*<table class="table">
+        <tr>
+            <td class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="~/Content/Images/@Model.Room_Image_url_3" class="img-thumbnail" width="900" height="900" />
+            </td>
+            <td class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <h4>@Model.Room_Description</h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img id="u1" src="~/Content/Images/@Model.Room_Image_url_1" class="img-thumbnail" width="50" height="50" />
+                <img id="u2" src="~/Content/Images/@Model.Room_Image_url_2" class="img-thumbnail" width="50" height="50" />
+                <img id="u3" src="~/Content/Images/@Model.Room_Image_url_4" class="img-thumbnail" width="50" height="50" />
+                <img id="u4" src="~/Content/Images/@Model.Room_Image_url_5" class="img-thumbnail" width="50" height="50" />
+            </td>
+            <td>
+                @Html.ActionLink("Book", "login", "Home", new {roomNo=Model.Room_Number, }, new { @class = " form-controll btn btn-primary" })
+            </td>
+
+        </tr>
+
+    </table>*@

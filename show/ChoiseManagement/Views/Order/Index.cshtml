@@ -1,0 +1,23 @@
+﻿@model ChoiseManagement.Models.ViewModels.OrderViewModel
+
+@{
+    ViewBag.Title = "Index";
+Layout = "~/Views/Shared/Top.cshtml";
+}
+
+
+
+    <div class="row">
+        @Html.Partial("_Navigations", Model.NavBarCategories);
+    </div>
+
+
+
+
+    <div class="row" style="margin-left:30px;">
+        @Html.Partial("_foodItems", Model.foods);
+    </div>
+
+
+
+

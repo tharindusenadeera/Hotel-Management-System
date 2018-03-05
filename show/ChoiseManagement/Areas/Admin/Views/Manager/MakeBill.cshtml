@@ -1,0 +1,204 @@
+﻿@model ChoiseManagement.Models.ViewModels.BillViewModel
+
+@{
+    ViewBag.Title = "MakeBill";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Invoice Number:E123456789B</h2>
+
+<div>
+    <h4>Hotel Beach Castle (TM)</h4>
+    <hr />
+    
+    <div class="row pull-right form-inline">
+        <label>Invoice Number:I123456789B</label>
+
+    </div>
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayName("Guest Id")
+                </th>
+                <th>
+                    @Html.DisplayName("Guest Name")
+                </th>
+                <th>
+                    @Html.DisplayName("Guest Email")
+                </th>
+                <th>
+                    @Html.DisplayName("Guest Contact No")
+                </th>
+                <th>
+                    @Html.DisplayName("Address")
+                </th>
+               
+            </tr>
+
+            @foreach (var item in Model.ReservationDetails)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Guest_Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Guest_Details.Guest_First_Name) 
+                        @Html.DisplayFor(modelItem => item.Guest_Details.Guest_Last_Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Guest_Details.Guest_Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Guest_Details.Guest_MobileNO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Guest_Details.Guest_Address)
+                    </td>
+                    
+                </tr>
+            }
+
+        </table>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayName("Reservation Id")
+                </th>
+                <th>
+                    @Html.DisplayName("Package")
+                </th>
+                <th>
+                    @Html.DisplayName("Arival Date")
+                </th>
+                <th>
+                    @Html.DisplayName("Departure Date")
+                </th>
+                <th>
+                   @Html.DisplayName("Adults")
+                </th>
+                <th>
+                    @Html.DisplayName("Childrens")
+                </th>
+                <th>
+                    @Html.DisplayName("Price")
+                </th>
+            </tr>
+
+            @foreach (var item in Model.ReservationDetails)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Reservation_Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Package.Package_Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Check_In)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Check_Out)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Adults)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Childrens)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Package.Package_Price)
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayName("Item Name")
+                </th>
+                <th>
+                    @Html.DisplayName("Description")
+                </th>
+                <th>
+                    @Html.DisplayName("Quantity")
+                </th>
+                <th>
+                    @Html.DisplayName("Protion Price")
+                </th>
+                <th>
+                    @Html.DisplayName(" Total")
+                </th>
+               
+            </tr>
+
+            @foreach (var item in Model.Orderdetails)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Food_Items.Item_Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Food_Items.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Item_Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Item_Portion_Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Total_Item_Price)
+                    </td>
+                    
+                </tr>
+            }
+
+        </table>
+    </div>
+    <hr />
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayName("Total (Rs)")
+                </th>
+                <th>
+                    @Html.DisplayName("Paid (Rs)")
+                </th>
+                <th>
+                    @Html.DisplayName("Balance  (Rs)")
+                </th>
+              
+            </tr>
+
+            @foreach (var item in Model.BillDetails)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Total_Charge)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Paid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Total_Charge) 
+                    </td>
+                   
+
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+<p>
+    
+</p>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Food_Items>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Food_Categories.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item_Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Portion_Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image_URL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Food_Categories.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Item_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Item_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Portion_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image_URL)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

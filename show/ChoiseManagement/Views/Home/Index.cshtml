@@ -1,0 +1,311 @@
+﻿@model ChoiseManagement.Models.Hotel.DTOSearch
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link href="~/Content/HomeIndex.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="~/Scripts/HomeIndex.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js">
+    </script>
+
+    <script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+</head>
+<body data-spy="scroll" data-target="#myNav">
+    <div class="header chnagejt">
+        <div class="container">
+            <img src="~/Content/Images/134515.png"  style="width:1300px;height:65px; margin-bottom:0px; " />
+
+        </div>
+
+    </div>
+
+    <nav id="myNav" class="navbar navbar-inverse" data-spy="affix">
+        <div class="container" id="section-1">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">
+                            <img src="~/Content/Images/logo.jpg" style="margin-top:-13px; margin-left:-30px; height:60px; width:100px; z-index:20;" />
+                        </a>
+                    </div>
+                    <!-- Collection of nav links and other content for toggling -->
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+
+                            <li class="active"><a href="#section-1">Home</a></li>
+                            <li><a href="#section-2">Reservations</a></li>
+                            <li><a href="#section-3">Foods</a></li>
+                            <li><a href="#section-4">Rooms</a></li>
+                            <li><a href="#section-5">Beaches</a></li>
+                            <li><a href="#section-6">Restaurants</a></li>
+                            <li><a href="#section-7">Contact</a></li>
+                            <li>
+                                @if (ViewBag.Name == null)
+                                {
+                                    @Html.ActionLink("Login", "login", "Home", new { @class = " form-controll btn btn-primary pull-right" });
+                                }
+                               
+                            </li>
+                            <li>@if (ViewBag.Name != null)
+                            {
+                                <div class="form-inline" style="color:#ffffff">
+                                    <div class="col-md-8 form-inline">
+                                        <h4>Hi @ViewBag.Name</h4>
+                                        @Html.ActionLink("My Account", "MyAcnt", "Home", new { @class = " form-controll pull-right" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.ActionLink("logout", "LogOut", "Home", new { @class = " form-controll btn btn-primary pull-right" })
+                                    </div>
+
+                                </div>
+                            }
+                          
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="first-slide" src="~/Content/Images/bc22.jpg" alt="First slide" />
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="center-block">Capture the Life</h1>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="second-slide" src="~/Content/Images/bc19.jpg" alt="Second slide" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1> Feel the Moment</h1>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="third-slide" src="~/Content/Images/bc13.jpg" alt="Third slide" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1></h1>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="forth-slide" src="~/Content/Images/bc3.jpg" alt="Forth slide" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Best Places to Enjoy</h1>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><!-- /.carousel -->
+    </div>
+    <div>
+
+        <button type="button" class="btn-lg btn-primary col-lg-12" data-toggle="modal" data-target="#exampleModal" data-whatever="">Check Room For Your Best Moments</button>
+        @using (Html.BeginForm("RoomsSearch", "Home", FormMethod.Post))
+            {<div class="modal fade" id="exampleModal" tabindex="-9999" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Search for a Room</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+                            <div class="form-group">
+                                @Html.LabelFor(M => M.Arival_Date)
+                                @Html.EditorFor(m => m.Arival_Date)
+                                @Html.LabelFor(M => M.Departure_Date)
+                                @Html.EditorFor(m => m.Departure_Date)
+                            </div>
+                            <div class="form-group ">
+                                @Html.LabelFor(M => M.Adults)
+                                @Html.DropDownListFor(m => m.Adults, new List<SelectListItem>
+                               { new SelectListItem {Text="0",Value="0",Selected=true},
+                                            new SelectListItem {Text="1"},
+                                   new SelectListItem {Text="2",Value="2"},
+                                   new SelectListItem {Text="3",Value="3"},
+                               }, new { @class = "form-control" })
+                                @Html.LabelFor(M => M.Childerens)
+                                @Html.DropDownListFor(m => m.Childerens, new List<SelectListItem>
+                               { new SelectListItem {Text="0",Value="0",Selected=true },
+                                   new SelectListItem {Text="1",Value="1"},
+                                   new SelectListItem {Text="2",Value="2"},
+                                   new SelectListItem {Text="3",Value="3"},
+                               }, new { @class = "form-control" })
+                            </div>
+                            <input type="submit" value="Check" class="btn-primary" />
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>}
+    </div>
+
+    <div class="container marketing" id="section-2">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4 img-square">
+                <img id="img-square" src="~/Content/Images/bc29.jpg" alt="Generic placeholder image" width="180" height="180" />
+                <h2>Restaurants</h2>
+                <p>According to the your dream take the meals in great environment</p>
+                <p>@Html.ActionLink("Resturents", "Index", "Home", new { @class = " form-controll btn btn-primary" })</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 img-square">
+                <img id="img-square" src="~/Content/Images/bc10.jpg" alt="Generic placeholder image" width="180" height="180" />
+                <h2>Rooms</h2>
+                <p>Super Luxury Rooms for your dream Nights</p>
+                <p>@Html.ActionLink("Rooms", "Rooms", "Home", new { @class = " form-controll btn btn-primary" })</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 img-square">
+                <img id="img-square" src="~/Content/Images/bc30.jpg" alt="Generic placeholder image" width="180" height="180" />
+                <h2>Amazing Coastal</h2>
+                <p>Enjoy your evening</p>
+                <p>@Html.ActionLink("Beach", "Index", "Home", new { @class = " form-controll btn btn-primary" })</p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" id="section-3" />
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Delicious Food for Your Dream Taste<span class="text-muted"> It'll blow your mind.Have world Famouse Foods</span></h2>
+                <p class="lead">A fast food restaurant, also known as a quick service restaurant (QSR) within the industry, is a specific type of restaurant characterized both by its fast food cuisine and by minimal table service. Food served in fast food restaurants typically caters to a "meat-sweet diet" and is offered from a limited menu; is cooked in bulk in advance and kept hot; is finished and packaged to order; and is usually available ready to take away, though seating may be provided. Fast food restaurants are typically part of a restaurant chain or franchise operation, which provisions standardized ingredients and/or partially prepared foods and supplies to each restaurant through controlled supply channels.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" src="~/Content/Images/Food.jpg" alt="Generic placeholder image" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider" id="section-4" />
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Oh yeah, it's that good.Rooms for your lovable Holidays <span class="text-muted">See for yourself.</span></h2>
+                <p class="lead">Experience five-star luxury in Rome when you stay in a Single Deluxe room at Hotel Eden. With fine fabrics, art and furnishings, these rooms embody turn of the century Italian elegance and offer city or courtyard views. Relax in the cosy queen-size bed or catch up on your reading whilst seated at the wooden desk. Each one is uniquely decorated and features a marble bathroom.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block" src="~/Content/Images/23-4.jpg" alt="Generic placeholder image" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette" id="section-5">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Most Beautiful Beaches Around the Hotel <span class="text-muted">Most Famouse Beach</span></h2>
+                <p class="lead">Check out our fun beach facts for kids and enjoy learning a variety of interesting information about beaches.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" src="~/Content/Images/slide-05.jpg" alt="Generic placeholder image" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette" id="section-6">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Renoune Restaurant  <span class="text-muted">Happy Hour With Bar</span></h2>
+                <p class="lead">Make Sunday the highlight of your week by enjoying a leisurely brunch at one of the best hotels in LA. Enjoy a beautiful setting, with a relaxed atmosphere and varied menu, featuring something to satisfy all tastes. It is how Sundays should be.
+
+11:00am – 3:00pm
+Live Entertainment from 12:00 – 3:00pm
+For reservations please call 310.909.1644
+
+$75 per person* for adults with a glass of Champagne or Bellini.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block" src="~/Content/Images/Resturent.jpg" alt="Generic placeholder image" />
+            </div>
+        </div>
+
+        <!-- /END THE FEATURETTES -->
+        <footer class="container-fluid well row" style="margin-top:150px;margin-bottom:10px; height:300px; color:#000000; background-color:#0026ff" id="section-7">
+            <div class="col-lg-6">
+                <p>&copy; @DateTime.Now.Year - Hotel Beach Castle (TM)</p>
+                <h5>Contact Us</h5>
+                <h5>(+94) 91 xxxx xxx</h5><br />
+                <h5>Emails</h5>
+                <h5>beachcastle@hotel.com</h5><br />
+                <h5>Avanue</h5>
+                <h5>Matara Road, Ganahena, Unawatuna, 80600 Unawatuna, Sri Lanka</h5><br />
+            </div>
+            
+            
+        </footer>
+
+    </div>
+</body>
+</html>                                		

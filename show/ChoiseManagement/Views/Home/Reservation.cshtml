@@ -1,0 +1,204 @@
+﻿@model ChoiseManagement.Models.ViewModels.ReservationViewModel
+    @using ChoiseManagement.Models.Hotel
+@{
+    ViewBag.Title = "Reservation";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<h3>Welcome @ViewBag.Name</h3>
+<h4 class="text-danger alert-danger">@ViewBag.date</h4>
+<h3 class="text-danger">@ViewBag.Error</h3>
+<h4 class="text-danger">@ViewBag.cap</h4>
+<h2>Make Reservation</h2>
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">@Model.selectedRoom.Room_Catagorys.Room_Catogory</h3>
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <img class="img-thumbnail" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_1" style="width:350px;height:350px;" />
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <div class="row"><h5>@Model.selectedRoom.Room_Catagorys.Room_Description</h5></div>
+                    <div>
+                        <h3>Room Capacity:@Model.selectedRoom.RoomCapacity</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            @if (Model.selectedRoom.Room_Catagorys.DvdPlayer == 1)
+                            {
+                                <h5><img src="~/Content/Images/gtick.png" />DvdPlayer</h5>
+                            }
+                            else
+                            {
+                                <h5>DvdPlayer</h5>
+                            }
+                        </div>
+                        <div class="col-lg-4">
+                            @if (Model.selectedRoom.Room_Catagorys.LCD_Television == 1)
+                            {
+                                <h5><img src="~/Content/Images/gtick.png" />LCD_Television</h5>
+                            }
+                            else
+                            {
+                                <h5>LCD_Television</h5>
+                            }
+                        </div>
+                        <div class="col-lg-4">
+                            @if (Model.selectedRoom.Room_Catagorys.MiniBar == 1)
+                            {
+                                <h5><img src="~/Content/Images/gtick.png" />MiniBar</h5>
+                            }
+                            else
+                            {
+                                <h5>MiniBar</h5>
+                            }
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            @if (Model.selectedRoom.Room_Catagorys.HairDrier == 1)
+                            {
+                                <h5><img src="~/Content/Images/gtick.png" />HairDrier</h5>
+                            }
+                            else
+                            {
+                                <h5>HairDrier</h5>
+                            }
+                        </div>
+                        <div class="col-lg-4">
+                            @if (Model.selectedRoom.Room_Catagorys.RoomServices == 1)
+                            {
+                                <h5><img src="~/Content/Images/gtick.png" />RoomServices</h5>
+                            }
+                            else
+                            {
+                                <h5>RoomServices</h5>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-thumbnail smallimages" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_2" />
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-thumbnail smallimages" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_3" />
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-thumbnail smallimages" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_4" />
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-thumbnail smallimages" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_5" />
+                </div>
+                @*<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                    @Html.ActionLink("Book", "login", "Home", new { roomNo = Model.selectedRoom.Room_Number, }, new { @class = " form-controll btn btn-primary pull-right" })
+                </div>*@
+            </div>
+        </div>
+    </div>
+    @*<div class="row">
+        <div class="panel panel-primary panel-heading">@Model.selectedRoom.Room_Catagorys.Room_Catogory</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img style="width:250px;height:250px;" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_1" />
+                </div>
+                <div class="col-lg-6">
+                    <h4>@Model.selectedRoom.Room_Catagorys.Room_Description</h4>
+                    <hr />
+                    <h3>@Model.selectedRoom.RoomCapacity</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-thumbnail" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_2" />
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-thumbnail" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_3" />
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-thumbnail" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_4" />
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img class="img-thumbnail" src="~/Content/Images/@Model.selectedRoom.Room_Image_url_5" />
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+               
+                    <div class="col-lg-2">
+                        @if (Model.selectedRoom.Room_Catagorys.DvdPlayer==1)
+                        {
+                        <h5><span class="glyphicon glyphicon-ok-circle"></span>DvdPlayer</h5>
+                        }
+                        else
+                        {
+                        <h5><span class="glyphicon glyphicon-remove-circle"></span>DvdPlayer</h5>
+                        }
+                    </div>
+                <div class="col-lg-2">
+                    @if (Model.selectedRoom.Room_Catagorys.LCD_Television== 1)
+                    {
+                    <h5><span class="glyphicon glyphicon-ok-circle"></span>LCD_Television</h5>
+                    }
+                    else
+                    {
+                    <h5><span class="glyphicon glyphicon-remove-circle"></span>LCD_Television</h5>
+                    }
+                </div>
+                <div class="col-lg-2">
+                    @if (Model.selectedRoom.Room_Catagorys.MiniBar== 1)
+                    {
+                    <h5><span class="glyphicon glyphicon-ok-circle"></span>MiniBar</h5>
+                    }
+                    else
+                    {
+                    <h5><span class="glyphicon glyphicon-remove-circle"></span>MiniBar</h5>
+                    }
+                </div>
+                <div class="col-lg-2">
+                    @if (Model.selectedRoom.Room_Catagorys.HairDrier== 1)
+                    {
+                    <h5><span class="glyphicon glyphicon-ok-circle"></span>HairDrier</h5>
+                    }
+                    else
+                    {
+                    <h5><span class="glyphicon glyphicon-remove-circle"></span>HairDrier</h5>
+                    }
+                </div>
+                <div class="col-lg-2">
+                    @if (Model.selectedRoom.Room_Catagorys.RoomServices== 1)
+                    {
+                    <h5><span class="glyphicon glyphicon-ok-circle"></span>RoomServices</h5>
+                    }
+                    else
+                    {
+                    <h5><span class="glyphicon glyphicon-remove-circle"></span>RoomServices</h5>
+                    }
+                </div>
+                   
+                
+
+            </div>
+            
+            <hr />
+           
+        </div>
+    </div>*@
+    <div class="row">
+        
+        @Html.Partial("_Reservationptrl");
+    </div>
+</div>
+
+<script>
+
+</script>

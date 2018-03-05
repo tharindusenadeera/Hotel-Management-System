@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChoiceHotelManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin_login">
+    <Key>
+      <PropertyRef Name="Depertment_Id" />
+    </Key>
+    <Property Name="Depertment_Id" Type="Int32" Nullable="false" />
+    <Property Name="Depertment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Bill">
+    <Key>
+      <PropertyRef Name="Bill_ID" />
+    </Key>
+    <Property Name="Bill_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Reservation_ID" Type="Int32" />
+    <Property Name="Total_Charge" Type="Int32" />
+    <Property Name="Paid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Event_GuestDetails">
+    <Key>
+      <PropertyRef Name="EventReservationId" />
+    </Key>
+    <Property Name="EventReservationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GuestName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Guest_Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Guest_Contact_No" Type="Int32" />
+    <Property Name="EventName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EventDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EventReservations" Relationship="Self.FK_EventReservation_Event_GuestDetails" FromRole="Event_GuestDetails" ToRole="EventReservation" />
+  </EntityType>
+  <EntityType Name="EventReservation">
+    <Key>
+      <PropertyRef Name="EventBookingID" />
+    </Key>
+    <Property Name="EventBookingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HallNumber" Type="Int32" />
+    <Property Name="EventStartDate" Type="DateTime" Precision="3" />
+    <Property Name="EventEndDate" Type="DateTime" Precision="3" />
+    <Property Name="EventReservationId" Type="Int32" />
+    <NavigationProperty Name="Event_GuestDetails" Relationship="Self.FK_EventReservation_Event_GuestDetails" FromRole="EventReservation" ToRole="Event_GuestDetails" />
+    <NavigationProperty Name="Hall" Relationship="Self.FK_EventReservation_Halls" FromRole="EventReservation" ToRole="Halls" />
+  </EntityType>
+  <EntityType Name="Food_Categories">
+    <Key>
+      <PropertyRef Name="Food_category_Id" />
+    </Key>
+    <Property Name="Food_category_Id" Type="Int32" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Food_Items" Relationship="Self.FK_Food_Items_Food_Categories" FromRole="Food_Categories" ToRole="Food_Items" />
+  </EntityType>
+  <EntityType Name="Food_Items">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Item_Category_ID" Type="Int32" />
+    <Property Name="Item_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Item_Code" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Portion_Price" Type="Int32" />
+    <Property Name="Image_URL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Food_Categories" Relationship="Self.FK_Food_Items_Food_Categories" FromRole="Food_Items" ToRole="Food_Categories" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Food_Items" FromRole="Food_Items" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Guest_Details">
+    <Key>
+      <PropertyRef Name="Guest_Id" />
+    </Key>
+    <Property Name="Guest_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Guest_Title" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Guest_First_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Guest_Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Guest_Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Guest_Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Guest_MobileNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Paasword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Reservations" Relationship="Self.FK_Reservations_Guest_Details1" FromRole="Guest_Details" ToRole="Reservations" />
+  </EntityType>
+  <EntityType Name="Hall">
+    <Key>
+      <PropertyRef Name="HallId" />
+    </Key>
+    <Property Name="HallId" Type="Int32" Nullable="false" />
+    <Property Name="HallName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HallCapacity" Type="Int32" />
+    <Property Name="HallDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HImage1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HImage2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HImage3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HImage4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Hall_price_Hour" Type="Int32" />
+    <NavigationProperty Name="EventReservations" Relationship="Self.FK_EventReservation_Halls" FromRole="Halls" ToRole="EventReservation" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Order_Id" />
+    </Key>
+    <Property Name="Order_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Reservation_Id" Type="Int32" />
+    <Property Name="Item_Id" Type="Int32" />
+    <Property Name="Item_Quantity" Type="Int32" />
+    <Property Name="Item_Portion_Price" Type="Int32" />
+    <Property Name="Total_Item_Price" Type="Int32" />
+    <NavigationProperty Name="Food_Items" Relationship="Self.FK_Orders_Food_Items" FromRole="Orders" ToRole="Food_Items" />
+    <NavigationProperty Name="Reservation" Relationship="Self.FK_Orders_reserve" FromRole="Orders" ToRole="Reservations" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="Package_ID" />
+    </Key>
+    <Property Name="Package_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Package_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Package_Price" Type="Int32" />
+    <Property Name="Package_Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Reservations" Relationship="Self.FK_Reservations_Packages" FromRole="Packages" ToRole="Reservations" />
+  </EntityType>
+  <EntityType Name="Reservation">
+    <Key>
+      <PropertyRef Name="Reservation_Id" />
+    </Key>
+    <Property Name="Reservation_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Guest_Id" Type="Int32" />
+    <Property Name="Package_Id" Type="Int32" />
+    <Property Name="Room_Number" Type="Int32" />
+    <Property Name="Check_In" Type="DateTime" Precision="0" />
+    <Property Name="Check_Out" Type="DateTime" Precision="0" />
+    <Property Name="Adults" Type="Int32" />
+    <Property Name="Childrens" Type="Int32" />
+    <NavigationProperty Name="Guest_Details" Relationship="Self.FK_Reservations_Guest_Details1" FromRole="Reservations" ToRole="Guest_Details" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_reserve" FromRole="Reservations" ToRole="Orders" />
+    <NavigationProperty Name="Package" Relationship="Self.FK_Reservations_Packages" FromRole="Reservations" ToRole="Packages" />
+    <NavigationProperty Name="Room" Relationship="Self.FK_Reservations_Rooms" FromRole="Reservations" ToRole="Rooms" />
+    <NavigationProperty Name="RoomBookings" Relationship="Self.FK_RoomBookings_Reservations" FromRole="Reservations" ToRole="RoomBookings" />
+  </EntityType>
+  <EntityType Name="Room_Catagorys">
+    <Key>
+      <PropertyRef Name="Room_Catogory_Id" />
+    </Key>
+    <Property Name="Room_Catogory_Id" Type="Int32" Nullable="false" />
+    <Property Name="Room_Catogory" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Room_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image_Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="LCD_Television" Type="Int32" />
+    <Property Name="DvdPlayer" Type="Int32" />
+    <Property Name="RoomServices" Type="Int32" />
+    <Property Name="MiniBar" Type="Int32" />
+    <Property Name="WiFi" Type="Int32" />
+    <Property Name="HairDrier" Type="Int32" />
+    <NavigationProperty Name="Rooms" Relationship="Self.FK_Rooms_Room_Catagorys" FromRole="Room_Catagorys" ToRole="Rooms" />
+  </EntityType>
+  <EntityType Name="RoomBooking">
+    <Key>
+      <PropertyRef Name="BookingID" />
+    </Key>
+    <Property Name="BookingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoomNo" Type="Int32" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="ArivalDate" Type="DateTime" Precision="0" />
+    <Property Name="DepartureDate" Type="DateTime" Precision="0" />
+    <Property Name="ReservationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Reservation" Relationship="Self.FK_RoomBookings_Reservations" FromRole="RoomBookings" ToRole="Reservations" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="Room_Id" />
+    </Key>
+    <Property Name="Room_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Room_Category_Id" Type="Int32" />
+    <Property Name="Room_Number" Type="Int32" />
+    <Property Name="Room_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Room_Image_url_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Room_Image_url_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Room_Image_url_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Room_Image_url_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Room_Image_url_5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RoomCapacity" Type="Int32" />
+    <NavigationProperty Name="Reservations" Relationship="Self.FK_Reservations_Rooms" FromRole="Rooms" ToRole="Reservations" />
+    <NavigationProperty Name="Room_Catagorys" Relationship="Self.FK_Rooms_Room_Catagorys" FromRole="Rooms" ToRole="Room_Catagorys" />
+  </EntityType>
+  <Association Name="FK_EventReservation_Event_GuestDetails">
+    <End Role="Event_GuestDetails" Type="Self.Event_GuestDetails" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EventReservation" Type="Self.EventReservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event_GuestDetails">
+        <PropertyRef Name="EventReservationId" />
+      </Principal>
+      <Dependent Role="EventReservation">
+        <PropertyRef Name="EventReservationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EventReservation_Halls">
+    <End Role="Halls" Type="Self.Hall" Multiplicity="0..1" />
+    <End Role="EventReservation" Type="Self.EventReservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Halls">
+        <PropertyRef Name="HallId" />
+      </Principal>
+      <Dependent Role="EventReservation">
+        <PropertyRef Name="HallNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Food_Items_Food_Categories">
+    <End Role="Food_Categories" Type="Self.Food_Categories" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Food_Items" Type="Self.Food_Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Food_Categories">
+        <PropertyRef Name="Food_category_Id" />
+      </Principal>
+      <Dependent Role="Food_Items">
+        <PropertyRef Name="Item_Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Food_Items">
+    <End Role="Food_Items" Type="Self.Food_Items" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Food_Items">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservations_Guest_Details1">
+    <End Role="Guest_Details" Type="Self.Guest_Details" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Guest_Details">
+        <PropertyRef Name="Guest_Id" />
+      </Principal>
+      <Dependent Role="Reservations">
+        <PropertyRef Name="Guest_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_reserve">
+    <End Role="Reservations" Type="Self.Reservation" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reservations">
+        <PropertyRef Name="Reservation_Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Reservation_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservations_Packages">
+    <End Role="Packages" Type="Self.Package" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Packages">
+        <PropertyRef Name="Package_ID" />
+      </Principal>
+      <Dependent Role="Reservations">
+        <PropertyRef Name="Package_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservations_Rooms">
+    <End Role="Rooms" Type="Self.Room" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Reservations" Type="Self.Reservation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rooms">
+        <PropertyRef Name="Room_Id" />
+      </Principal>
+      <Dependent Role="Reservations">
+        <PropertyRef Name="Room_Number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoomBookings_Reservations">
+    <End Role="Reservations" Type="Self.Reservation" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="RoomBookings" Type="Self.RoomBooking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reservations">
+        <PropertyRef Name="Reservation_Id" />
+      </Principal>
+      <Dependent Role="RoomBookings">
+        <PropertyRef Name="ReservationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rooms_Room_Catagorys">
+    <End Role="Room_Catagorys" Type="Self.Room_Catagorys" Multiplicity="0..1" />
+    <End Role="Rooms" Type="Self.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room_Catagorys">
+        <PropertyRef Name="Room_Catogory_Id" />
+      </Principal>
+      <Dependent Role="Rooms">
+        <PropertyRef Name="Room_Category_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ChoiceHotelManagementEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admin_login" EntityType="Self.Admin_login" />
+    <EntitySet Name="Bills" EntityType="Self.Bill" />
+    <EntitySet Name="Event_GuestDetails" EntityType="Self.Event_GuestDetails" />
+    <EntitySet Name="EventReservations" EntityType="Self.EventReservation" />
+    <EntitySet Name="Food_Categories" EntityType="Self.Food_Categories" />
+    <EntitySet Name="Food_Items" EntityType="Self.Food_Items" />
+    <EntitySet Name="Guest_Details" EntityType="Self.Guest_Details" />
+    <EntitySet Name="Halls" EntityType="Self.Hall" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Packages" EntityType="Self.Package" />
+    <EntitySet Name="Reservations" EntityType="Self.Reservation" />
+    <EntitySet Name="Room_Catagorys" EntityType="Self.Room_Catagorys" />
+    <EntitySet Name="RoomBookings" EntityType="Self.RoomBooking" />
+    <EntitySet Name="Rooms" EntityType="Self.Room" />
+    <AssociationSet Name="FK_EventReservation_Event_GuestDetails" Association="Self.FK_EventReservation_Event_GuestDetails">
+      <End Role="Event_GuestDetails" EntitySet="Event_GuestDetails" />
+      <End Role="EventReservation" EntitySet="EventReservations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EventReservation_Halls" Association="Self.FK_EventReservation_Halls">
+      <End Role="Halls" EntitySet="Halls" />
+      <End Role="EventReservation" EntitySet="EventReservations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Food_Items_Food_Categories" Association="Self.FK_Food_Items_Food_Categories">
+      <End Role="Food_Categories" EntitySet="Food_Categories" />
+      <End Role="Food_Items" EntitySet="Food_Items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Food_Items" Association="Self.FK_Orders_Food_Items">
+      <End Role="Food_Items" EntitySet="Food_Items" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservations_Guest_Details1" Association="Self.FK_Reservations_Guest_Details1">
+      <End Role="Guest_Details" EntitySet="Guest_Details" />
+      <End Role="Reservations" EntitySet="Reservations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_reserve" Association="Self.FK_Orders_reserve">
+      <End Role="Reservations" EntitySet="Reservations" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservations_Packages" Association="Self.FK_Reservations_Packages">
+      <End Role="Packages" EntitySet="Packages" />
+      <End Role="Reservations" EntitySet="Reservations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservations_Rooms" Association="Self.FK_Reservations_Rooms">
+      <End Role="Rooms" EntitySet="Rooms" />
+      <End Role="Reservations" EntitySet="Reservations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoomBookings_Reservations" Association="Self.FK_RoomBookings_Reservations">
+      <End Role="Reservations" EntitySet="Reservations" />
+      <End Role="RoomBookings" EntitySet="RoomBookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rooms_Room_Catagorys" Association="Self.FK_Rooms_Room_Catagorys">
+      <End Role="Room_Catagorys" EntitySet="Room_Catagorys" />
+      <End Role="Rooms" EntitySet="Rooms" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

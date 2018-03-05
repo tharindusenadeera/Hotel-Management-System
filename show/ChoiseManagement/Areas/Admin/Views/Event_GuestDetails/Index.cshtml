@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Event_GuestDetails>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GuestName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Guest_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Guest_Contact_No)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventDescription)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuestName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guest_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guest_Contact_No)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventDescription)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EventReservationId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EventReservationId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EventReservationId })
+        </td>
+    </tr>
+}
+
+</table>

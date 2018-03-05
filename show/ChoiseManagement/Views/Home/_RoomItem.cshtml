@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Room>
+
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container well">@Html.Partial("_Room", item)</div>
+
+    }
+
+
+
+

@@ -1,0 +1,18 @@
+﻿@model ChoiseManagement.Models.ViewModels.RoomViewModel
+@{
+    ViewBag.Title = "Rooms";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>Rooms</h2>
+<div class="row">
+    <div class="col-sm-6 col-lg-3 col-md-3 col-xs-12">
+        @Html.Partial("_CategorySideBar", Model.catogories);
+    </div>
+    <div class="col-lg-9 col-md-9 col-xs-12" id="roomitem">
+        @Html.Partial("_RoomItem", Model.RoomList);
+    </div>
+
+
+</div>
+

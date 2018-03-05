@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Room>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Room_Catagorys.Room_Catogory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room_Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room_Image_url_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room_Image_url_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room_Image_url_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room_Image_url_4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Room_Image_url_5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RoomCapacity)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room_Catagorys.Room_Catogory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room_Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room_Image_url_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room_Image_url_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room_Image_url_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room_Image_url_4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Room_Image_url_5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RoomCapacity)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Room_Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Room_Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Room_Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d6d3086b33a14eac97883785583431b5" Name="Diagram1">
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Admin_login" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Bill" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Event_GuestDetails" Width="1.5" PointX="9.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.EventReservation" Width="1.5" PointX="12" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Food_Categories" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Food_Items" Width="1.5" PointX="5.25" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Guest_Details" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Hall" Width="1.5" PointX="9.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Order" Width="1.5" PointX="7.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Package" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Reservation" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Room_Catagorys" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.RoomBooking" Width="1.5" PointX="7.5" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChoiceHotelManagementModel.Room" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_EventReservation_Event_GuestDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_EventReservation_Halls" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_Food_Items_Food_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_Orders_Food_Items" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_Reservations_Guest_Details1" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_Orders_reserve" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_Reservations_Packages" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_Reservations_Rooms" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_RoomBookings_Reservations" ManuallyRouted="false" />
+        <AssociationConnector Association="ChoiceHotelManagementModel.FK_Rooms_Room_Catagorys" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

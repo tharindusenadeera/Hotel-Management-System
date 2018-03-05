@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ChoiseManagement.Models.Hotel.Room_Catagorys>
+
+@using ChoiseManagement.Models.Hotel;
+
+<ul class="list-group">
+    @Html.ActionLink("All Catogories", "Rooms", "Home", null, new { @class = "list-group-item active" })
+    @foreach (Room_Catagorys cat in Model)
+    {
+        @Html.ActionLink(@cat.Room_Catogory, "Rooms", "Home", new { categoryId = @cat.Room_Catogory_Id }, new { @class = "list-group-item" })
+
+
+    }
+</ul>
+
